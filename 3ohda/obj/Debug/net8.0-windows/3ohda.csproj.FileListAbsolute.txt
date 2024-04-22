@@ -29,3 +29,4 @@ C:\Users\Ahmad Taher\source\repos\3ohda\3ohda\obj\Debug\net8.0-windows\refint\3o
 C:\Users\Ahmad Taher\source\repos\3ohda\3ohda\obj\Debug\net8.0-windows\3ohda.pdb
 C:\Users\Ahmad Taher\source\repos\3ohda\3ohda\obj\Debug\net8.0-windows\3ohda.genruntimeconfig.cache
 C:\Users\Ahmad Taher\source\repos\3ohda\3ohda\obj\Debug\net8.0-windows\ref\3ohda.dll
+C:\Users\Ahmad Taher\source\repos\3ohda\3ohda\obj\Debug\net8.0-windows\3ohda.sourcelink.json

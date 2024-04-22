@@ -38,11 +38,11 @@
             // 
             // button1
             // 
-            button1.Location = new Point(319, 511);
+            button1.Location = new Point(12, 511);
             button1.Name = "button1";
-            button1.Size = new Size(109, 38);
+            button1.Size = new Size(164, 38);
             button1.TabIndex = 0;
-            button1.Text = "button1";
+            button1.Text = "Show non-returned items";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
@@ -72,6 +72,7 @@
             dataGridView1.Location = new Point(12, 12);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
+            dataGridView1.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             dataGridView1.Size = new Size(760, 493);
             dataGridView1.TabIndex = 1;
             // 

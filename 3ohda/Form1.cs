@@ -19,7 +19,7 @@ namespace _3ohda
 
             using (MySqlConnection con = new MySqlConnection(constring))
             {
-                string query = "select * from items where Quantity - QuantityReturned > 0";
+                string query = "select Name, Type, NameOfTaker, DateTaken, PlaceTaken,Quantity - QuantityReturned as RemainningQuantity from items where Returned = 0";
                 MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter(query, con);
                 mySqlDataAdapter.Fill(dt);
 
