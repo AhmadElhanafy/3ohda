@@ -30,3 +30,13 @@ C:\Users\Ahmad Taher\source\repos\3ohda\3ohda\obj\Debug\net8.0-windows\3ohda.pdb
 C:\Users\Ahmad Taher\source\repos\3ohda\3ohda\obj\Debug\net8.0-windows\3ohda.genruntimeconfig.cache
 C:\Users\Ahmad Taher\source\repos\3ohda\3ohda\obj\Debug\net8.0-windows\ref\3ohda.dll
 C:\Users\Ahmad Taher\source\repos\3ohda\3ohda\obj\Debug\net8.0-windows\3ohda.sourcelink.json
+C:\Users\Ahmad Taher\source\repos\3ohda\3ohda\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\Users\Ahmad Taher\source\repos\3ohda\3ohda\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Ahmad Taher\source\repos\3ohda\3ohda\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Ahmad Taher\source\repos\3ohda\3ohda\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Ahmad Taher\source\repos\3ohda\3ohda\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Ahmad Taher\source\repos\3ohda\3ohda\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Ahmad Taher\source\repos\3ohda\3ohda\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\Ahmad Taher\source\repos\3ohda\3ohda\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Ahmad Taher\source\repos\3ohda\3ohda\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\Ahmad Taher\source\repos\3ohda\3ohda\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
