@@ -1,3 +1,4 @@
+using Google.Protobuf.WellKnownTypes;
 using MySql.Data.MySqlClient;
 using Mysqlx.Crud;
 using System.Data;
@@ -33,7 +34,7 @@ namespace _3ohda
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (comboBox1.SelectedItem is null || textBox1.Text == "")
+            if (AddNewPersonRankCombobox.SelectedItem is null || textBox1.Text == "")
             {
                 return;
             }
@@ -44,17 +45,17 @@ namespace _3ohda
             MySqlCommand comm = conn.CreateCommand();
             comm.CommandText = "INSERT INTO personel (`Rank`, Name) VALUES(@rank, @name)";
             comm.Parameters.AddWithValue("@name", textBox1.Text.ToString());
-            comm.Parameters.AddWithValue("@rank", comboBox1.Text.ToString());
+            comm.Parameters.AddWithValue("@rank", AddNewPersonRankCombobox.Text.ToString());
             comm.ExecuteNonQuery();
             conn.Close();
 
-            comboBox1.SelectedItem = null;
+            AddNewPersonRankCombobox.SelectedItem = null;
             textBox1.Text = null;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (textBox2.Text == "")
+            if (AddNewCategoryTextBox.Text == "")
             {
                 return;
             }
@@ -64,11 +65,11 @@ namespace _3ohda
             conn.Open();
             MySqlCommand comm = conn.CreateCommand();
             comm.CommandText = "INSERT INTO category (Name) VALUES(@name)";
-            comm.Parameters.AddWithValue("@name", textBox2.Text.ToString());
+            comm.Parameters.AddWithValue("@name", AddNewCategoryTextBox.Text.ToString());
             comm.ExecuteNonQuery();
             conn.Close();
 
-            textBox2.Text = null;
+            AddNewCategoryTextBox.Text = null;
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -78,14 +79,12 @@ namespace _3ohda
             conn.Open();
             MySqlCommand comm = conn.CreateCommand();
             comm.CommandText = "INSERT INTO item (Name, CategoryID, SerialNumber, Place, StatusID, Notes) VALUES(@name, @categoryID, @serialNumber, @place, @statusID, @notes)";
-            comm.Parameters.AddWithValue("@name", textBox3.Text.ToString());
-            ComboboxValue tmpComboboxValue = comboBox1.SelectedItem as ComboboxValue;
-            comm.Parameters.AddWithValue("@categoryID", tmpComboboxValue.Id.ToString());
-            comm.Parameters.AddWithValue("@serialNumber", textBox2.Text.ToString());
-            comm.Parameters.AddWithValue("@place", textBox4.Text.ToString());
-            tmpComboboxValue = (ComboboxValue)comboBox3.SelectedItem;
-            comm.Parameters.AddWithValue("@statusID", tmpComboboxValue.Id.ToString());
-            comm.Parameters.AddWithValue("@notes", textBox5.Text.ToString());
+            comm.Parameters.AddWithValue("@name", AddNewItemNameTextbox.Text.ToString());
+            comm.Parameters.AddWithValue("@categoryID", (AddNewItemCategoryCombobox.SelectedItem as dynamic).Value);
+            comm.Parameters.AddWithValue("@serialNumber", AddNewCategoryTextBox.Text.ToString());
+            comm.Parameters.AddWithValue("@place", AddNewItemPlaceTextbox.Text.ToString());
+            comm.Parameters.AddWithValue("@statusID", (AddNewItemStatusCombobox.SelectedItem as dynamic).Value);
+            comm.Parameters.AddWithValue("@notes", AddNewItemNotesTextbox.Text.ToString());
             comm.ExecuteNonQuery();
             conn.Close();
         }
@@ -97,37 +96,46 @@ namespace _3ohda
 
         private void ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (comboBox2.SelectedIndex == 0)
+            if (AddNewItemCategoryCombobox.SelectedIndex == 0)
             {
-                label6.Enabled = true;
-                textBox4.Enabled = true;
+                AddNewItemSerialNumberLabel.Enabled = true;
+                AddNewItemSerialNumberTextbox.Enabled = true;
             }
             else
             {
-                label6.Enabled = false;
-                textBox4.Enabled = false;
+                AddNewItemSerialNumberLabel.Enabled = false;
+                AddNewItemSerialNumberTextbox.Enabled = false;
             }
         }
 
         void LoadCategoryCombobox()
         {
+            AddNewItemCategoryCombobox.DisplayMember = "Text";
+            AddNewItemCategoryCombobox.ValueMember = "Value";
+
             string constring = "Server=localhost; database=testdb; uid=root; pwd=root";
             DataTable linkcat = new DataTable("category");
             using (MySqlConnection sqlConn = new(constring))
             {
-                using (MySqlDataAdapter da = new MySqlDataAdapter("SELECT Name FROM category", sqlConn))
+                using (MySqlDataAdapter da = new MySqlDataAdapter("SELECT * FROM category", sqlConn))
                 {
                     da.Fill(linkcat);
                 }
             }
+
+            var items = Array.Empty<object>();
             foreach (DataRow da in linkcat.Rows)
             {
-                comboBox2.Items.Add(da[0].ToString());
-            }   
+
+                AddNewItemCategoryCombobox.Items.Add(new { Value = da[0].ToString(), Text = da[1].ToString() });
+            }
         }
 
         void LoadStatusCombobox()
         {
+            AddNewItemStatusCombobox.DisplayMember = "Text";
+            AddNewItemStatusCombobox.ValueMember = "Value";
+
             string constring = "Server=localhost; database=testdb; uid=root; pwd=root";
             DataTable linkcat = new DataTable("item_status");
             using (MySqlConnection sqlConn = new(constring))
@@ -139,8 +147,7 @@ namespace _3ohda
             }
             foreach (DataRow da in linkcat.Rows)
             {
-
-                comboBox3.Items.Add(new ComboboxValue((int)da[0], da[1].ToString()));
+                AddNewItemStatusCombobox.Items.Add(new { Value = da[0].ToString(), Text = da[1].ToString() });
             }
         }
     }

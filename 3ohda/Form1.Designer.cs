@@ -29,37 +29,43 @@
         private void InitializeComponent()
         {
             button1 = new Button();
-            label1 = new Label();
             panel1 = new Panel();
-            panel3 = new Panel();
-            button3 = new Button();
-            textBox2 = new TextBox();
-            label3 = new Label();
-            panel2 = new Panel();
-            button2 = new Button();
-            label2 = new Label();
-            comboBox1 = new ComboBox();
-            textBox1 = new TextBox();
             dataGridView1 = new DataGridView();
-            panel4 = new Panel();
-            button4 = new Button();
-            label9 = new Label();
-            label8 = new Label();
-            label7 = new Label();
-            label6 = new Label();
-            label5 = new Label();
-            label4 = new Label();
-            textBox6 = new TextBox();
-            textBox5 = new TextBox();
-            textBox4 = new TextBox();
-            textBox3 = new TextBox();
-            comboBox3 = new ComboBox();
-            comboBox2 = new ComboBox();
+            AddNewCategoryPanel = new Panel();
+            AddNewCategoryButton = new Button();
+            AddNewPersonPanel = new Panel();
+            AddNewPersonButton = new Button();
+            AddNewPersonLabel = new Label();
+            AddNewPersonRankCombobox = new ComboBox();
+            textBox1 = new TextBox();
+            AddNewCategoryTextBox = new TextBox();
+            AddNewCategoryLabel = new Label();
+            AddNewItemPanel = new Panel();
+            AddNewItemLabel = new Label();
+            AddNewItemButton = new Button();
+            AddNewItemNotesLabel = new Label();
+            AddNewItemStatusLabel = new Label();
+            AddNewItemPlaceLabel = new Label();
+            AddNewItemSerialNumberLabel = new Label();
+            AddNewItemCategoryLabel = new Label();
+            AddNewItemNameLabel = new Label();
+            AddNewItemSerialNumberTextbox = new TextBox();
+            AddNewItemNotesTextbox = new TextBox();
+            AddNewItemPlaceTextbox = new TextBox();
+            AddNewItemNameTextbox = new TextBox();
+            AddNewItemStatusCombobox = new ComboBox();
+            AddNewItemCategoryCombobox = new ComboBox();
+            menuStrip1 = new MenuStrip();
+            toolStripMenuItem1 = new ToolStripMenuItem();
+            addItemToolStripMenuItem = new ToolStripMenuItem();
+            addCategoryToolStripMenuItem = new ToolStripMenuItem();
+            personToolStripMenuItem = new ToolStripMenuItem();
             panel1.SuspendLayout();
-            panel3.SuspendLayout();
-            panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            panel4.SuspendLayout();
+            AddNewCategoryPanel.SuspendLayout();
+            AddNewPersonPanel.SuspendLayout();
+            AddNewItemPanel.SuspendLayout();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // button1
@@ -72,112 +78,14 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(12, 70);
-            label1.Name = "label1";
-            label1.Size = new Size(38, 15);
-            label1.TabIndex = 1;
-            label1.Text = "label1";
-            // 
             // panel1
             // 
-            panel1.Controls.Add(panel3);
-            panel1.Controls.Add(panel2);
             panel1.Controls.Add(dataGridView1);
             panel1.Controls.Add(button1);
-            panel1.Location = new Point(0, 0);
+            panel1.Location = new Point(1157, 102);
             panel1.Name = "panel1";
             panel1.Size = new Size(784, 561);
             panel1.TabIndex = 2;
-            // 
-            // panel3
-            // 
-            panel3.Controls.Add(button3);
-            panel3.Controls.Add(textBox2);
-            panel3.Controls.Add(label3);
-            panel3.Location = new Point(12, 91);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(784, 561);
-            panel3.TabIndex = 4;
-            // 
-            // button3
-            // 
-            button3.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button3.Location = new Point(348, 311);
-            button3.Name = "button3";
-            button3.Size = new Size(119, 56);
-            button3.TabIndex = 12;
-            button3.Text = "Add";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(318, 215);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(176, 23);
-            textBox2.TabIndex = 11;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 26.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(258, 70);
-            label3.Name = "label3";
-            label3.Size = new Size(303, 47);
-            label3.TabIndex = 10;
-            label3.Text = "Add new category";
-            // 
-            // panel2
-            // 
-            panel2.Controls.Add(button2);
-            panel2.Controls.Add(label2);
-            panel2.Controls.Add(comboBox1);
-            panel2.Controls.Add(textBox1);
-            panel2.Location = new Point(34, 53);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(784, 561);
-            panel2.TabIndex = 3;
-            // 
-            // button2
-            // 
-            button2.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button2.Location = new Point(334, 390);
-            button2.Name = "button2";
-            button2.Size = new Size(119, 56);
-            button2.TabIndex = 10;
-            button2.Text = "Add";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 26.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(259, 38);
-            label2.Name = "label2";
-            label2.Size = new Size(275, 47);
-            label2.TabIndex = 9;
-            label2.Text = "Add new person";
-            // 
-            // comboBox1
-            // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "ضابط صف", "ملازم", "ملازم اول", "نقيب", "رائد", "مقدم", "عقيد", "عميد", "لواء", "فريق", "فريق اول", "مشير" });
-            comboBox1.Location = new Point(305, 221);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(176, 23);
-            comboBox1.TabIndex = 8;
-            comboBox1.KeyPress += comboBox1_KeyPress;
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(305, 323);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(176, 23);
-            textBox1.TabIndex = 0;
             // 
             // dataGridView1
             // 
@@ -190,155 +98,298 @@
             dataGridView1.Size = new Size(760, 493);
             dataGridView1.TabIndex = 1;
             // 
-            // panel4
+            // AddNewCategoryPanel
             // 
-            panel4.Controls.Add(button4);
-            panel4.Controls.Add(label9);
-            panel4.Controls.Add(label8);
-            panel4.Controls.Add(label7);
-            panel4.Controls.Add(label6);
-            panel4.Controls.Add(label5);
-            panel4.Controls.Add(label4);
-            panel4.Controls.Add(textBox6);
-            panel4.Controls.Add(textBox5);
-            panel4.Controls.Add(textBox4);
-            panel4.Controls.Add(textBox3);
-            panel4.Controls.Add(comboBox3);
-            panel4.Controls.Add(comboBox2);
-            panel4.Location = new Point(402, 135);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(784, 561);
-            panel4.TabIndex = 5;
+            AddNewCategoryPanel.Controls.Add(AddNewCategoryButton);
+            AddNewCategoryPanel.Controls.Add(AddNewPersonPanel);
+            AddNewCategoryPanel.Controls.Add(AddNewCategoryTextBox);
+            AddNewCategoryPanel.Controls.Add(AddNewCategoryLabel);
+            AddNewCategoryPanel.Enabled = false;
+            AddNewCategoryPanel.Location = new Point(12, 27);
+            AddNewCategoryPanel.Name = "AddNewCategoryPanel";
+            AddNewCategoryPanel.Size = new Size(800, 600);
+            AddNewCategoryPanel.TabIndex = 4;
             // 
-            // button4
+            // AddNewCategoryButton
             // 
-            button4.Location = new Point(361, 456);
-            button4.Name = "button4";
-            button4.Size = new Size(75, 23);
-            button4.TabIndex = 12;
-            button4.Text = "button4";
-            button4.UseVisualStyleBackColor = true;
-            button4.Click += button4_Click;
+            AddNewCategoryButton.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            AddNewCategoryButton.Location = new Point(348, 311);
+            AddNewCategoryButton.Name = "AddNewCategoryButton";
+            AddNewCategoryButton.Size = new Size(119, 56);
+            AddNewCategoryButton.TabIndex = 12;
+            AddNewCategoryButton.Text = "Add";
+            AddNewCategoryButton.UseVisualStyleBackColor = true;
+            AddNewCategoryButton.Click += button3_Click;
             // 
-            // label9
+            // AddNewPersonPanel
             // 
-            label9.AutoSize = true;
-            label9.Location = new Point(310, 333);
-            label9.Name = "label9";
-            label9.Size = new Size(38, 15);
-            label9.TabIndex = 11;
-            label9.Text = "Notes";
+            AddNewPersonPanel.Controls.Add(AddNewPersonButton);
+            AddNewPersonPanel.Controls.Add(AddNewPersonLabel);
+            AddNewPersonPanel.Controls.Add(AddNewPersonRankCombobox);
+            AddNewPersonPanel.Controls.Add(textBox1);
+            AddNewPersonPanel.Enabled = false;
+            AddNewPersonPanel.Location = new Point(849, 57);
+            AddNewPersonPanel.Name = "AddNewPersonPanel";
+            AddNewPersonPanel.Size = new Size(800, 600);
+            AddNewPersonPanel.TabIndex = 3;
+            AddNewPersonPanel.Visible = false;
             // 
-            // label8
+            // AddNewPersonButton
             // 
-            label8.AutoSize = true;
-            label8.Location = new Point(310, 294);
-            label8.Name = "label8";
-            label8.Size = new Size(39, 15);
-            label8.TabIndex = 10;
-            label8.Text = "Status";
+            AddNewPersonButton.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            AddNewPersonButton.Location = new Point(334, 390);
+            AddNewPersonButton.Name = "AddNewPersonButton";
+            AddNewPersonButton.Size = new Size(119, 56);
+            AddNewPersonButton.TabIndex = 10;
+            AddNewPersonButton.Text = "Add";
+            AddNewPersonButton.UseVisualStyleBackColor = true;
+            AddNewPersonButton.Click += button2_Click;
             // 
-            // label7
+            // AddNewPersonLabel
             // 
-            label7.AutoSize = true;
-            label7.Location = new Point(310, 253);
-            label7.Name = "label7";
-            label7.Size = new Size(35, 15);
-            label7.TabIndex = 9;
-            label7.Text = "Place";
+            AddNewPersonLabel.AutoSize = true;
+            AddNewPersonLabel.Font = new Font("Segoe UI", 26.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            AddNewPersonLabel.Location = new Point(259, 38);
+            AddNewPersonLabel.Name = "AddNewPersonLabel";
+            AddNewPersonLabel.Size = new Size(275, 47);
+            AddNewPersonLabel.TabIndex = 9;
+            AddNewPersonLabel.Text = "Add new person";
             // 
-            // label6
+            // AddNewPersonRankCombobox
             // 
-            label6.AutoSize = true;
-            label6.Enabled = false;
-            label6.Location = new Point(310, 378);
-            label6.Name = "label6";
-            label6.Size = new Size(82, 15);
-            label6.TabIndex = 8;
-            label6.Text = "Serial Number";
+            AddNewPersonRankCombobox.FormattingEnabled = true;
+            AddNewPersonRankCombobox.Items.AddRange(new object[] { "ضابط صف", "ملازم", "ملازم اول", "نقيب", "رائد", "مقدم", "عقيد", "عميد", "لواء", "فريق", "فريق اول", "مشير" });
+            AddNewPersonRankCombobox.Location = new Point(305, 221);
+            AddNewPersonRankCombobox.Name = "AddNewPersonRankCombobox";
+            AddNewPersonRankCombobox.Size = new Size(176, 23);
+            AddNewPersonRankCombobox.TabIndex = 8;
+            AddNewPersonRankCombobox.KeyPress += comboBox1_KeyPress;
             // 
-            // label5
+            // textBox1
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(310, 211);
-            label5.Name = "label5";
-            label5.Size = new Size(55, 15);
-            label5.TabIndex = 7;
-            label5.Text = "Category";
+            textBox1.Location = new Point(305, 323);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(176, 23);
+            textBox1.TabIndex = 0;
             // 
-            // label4
+            // AddNewCategoryTextBox
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(310, 179);
-            label4.Name = "label4";
-            label4.Size = new Size(39, 15);
-            label4.TabIndex = 6;
-            label4.Text = "Name";
+            AddNewCategoryTextBox.Location = new Point(318, 215);
+            AddNewCategoryTextBox.Name = "AddNewCategoryTextBox";
+            AddNewCategoryTextBox.Size = new Size(176, 23);
+            AddNewCategoryTextBox.TabIndex = 11;
             // 
-            // textBox6
+            // AddNewCategoryLabel
             // 
-            textBox6.Location = new Point(400, 375);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(100, 23);
-            textBox6.TabIndex = 5;
+            AddNewCategoryLabel.AutoSize = true;
+            AddNewCategoryLabel.Font = new Font("Segoe UI", 26.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            AddNewCategoryLabel.Location = new Point(258, 70);
+            AddNewCategoryLabel.Name = "AddNewCategoryLabel";
+            AddNewCategoryLabel.Size = new Size(303, 47);
+            AddNewCategoryLabel.TabIndex = 10;
+            AddNewCategoryLabel.Text = "Add new category";
             // 
-            // textBox5
+            // AddNewItemPanel
             // 
-            textBox5.Location = new Point(400, 335);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(100, 23);
-            textBox5.TabIndex = 4;
+            AddNewItemPanel.Controls.Add(panel1);
+            AddNewItemPanel.Controls.Add(AddNewItemLabel);
+            AddNewItemPanel.Controls.Add(AddNewItemButton);
+            AddNewItemPanel.Controls.Add(AddNewItemNotesLabel);
+            AddNewItemPanel.Controls.Add(AddNewItemStatusLabel);
+            AddNewItemPanel.Controls.Add(AddNewItemPlaceLabel);
+            AddNewItemPanel.Controls.Add(AddNewItemSerialNumberLabel);
+            AddNewItemPanel.Controls.Add(AddNewItemCategoryLabel);
+            AddNewItemPanel.Controls.Add(AddNewItemNameLabel);
+            AddNewItemPanel.Controls.Add(AddNewItemSerialNumberTextbox);
+            AddNewItemPanel.Controls.Add(AddNewItemNotesTextbox);
+            AddNewItemPanel.Controls.Add(AddNewItemPlaceTextbox);
+            AddNewItemPanel.Controls.Add(AddNewItemNameTextbox);
+            AddNewItemPanel.Controls.Add(AddNewItemStatusCombobox);
+            AddNewItemPanel.Controls.Add(AddNewItemCategoryCombobox);
+            AddNewItemPanel.Enabled = false;
+            AddNewItemPanel.Location = new Point(845, 65);
+            AddNewItemPanel.Name = "AddNewItemPanel";
+            AddNewItemPanel.Size = new Size(800, 600);
+            AddNewItemPanel.TabIndex = 5;
+            AddNewItemPanel.Visible = false;
             // 
-            // textBox4
+            // AddNewItemLabel
             // 
-            textBox4.Enabled = false;
-            textBox4.Location = new Point(400, 250);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(100, 23);
-            textBox4.TabIndex = 3;
+            AddNewItemLabel.AutoSize = true;
+            AddNewItemLabel.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            AddNewItemLabel.Location = new Point(322, 38);
+            AddNewItemLabel.Name = "AddNewItemLabel";
+            AddNewItemLabel.Size = new Size(195, 40);
+            AddNewItemLabel.TabIndex = 13;
+            AddNewItemLabel.Text = "Add new item";
             // 
-            // textBox3
+            // AddNewItemButton
             // 
-            textBox3.Location = new Point(400, 172);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(100, 23);
-            textBox3.TabIndex = 2;
+            AddNewItemButton.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            AddNewItemButton.Location = new Point(362, 431);
+            AddNewItemButton.Name = "AddNewItemButton";
+            AddNewItemButton.Size = new Size(120, 53);
+            AddNewItemButton.TabIndex = 12;
+            AddNewItemButton.Text = "Add";
+            AddNewItemButton.UseVisualStyleBackColor = true;
+            AddNewItemButton.Click += button4_Click;
             // 
-            // comboBox3
+            // AddNewItemNotesLabel
             // 
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(400, 291);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(121, 23);
-            comboBox3.TabIndex = 1;
+            AddNewItemNotesLabel.AutoSize = true;
+            AddNewItemNotesLabel.Location = new Point(306, 298);
+            AddNewItemNotesLabel.Name = "AddNewItemNotesLabel";
+            AddNewItemNotesLabel.Size = new Size(38, 15);
+            AddNewItemNotesLabel.TabIndex = 11;
+            AddNewItemNotesLabel.Text = "Notes";
             // 
-            // comboBox2
+            // AddNewItemStatusLabel
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(400, 211);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(121, 23);
-            comboBox2.TabIndex = 0;
-            comboBox2.SelectedIndexChanged += ComboBox2_SelectedIndexChanged;
+            AddNewItemStatusLabel.AutoSize = true;
+            AddNewItemStatusLabel.Location = new Point(306, 259);
+            AddNewItemStatusLabel.Name = "AddNewItemStatusLabel";
+            AddNewItemStatusLabel.Size = new Size(39, 15);
+            AddNewItemStatusLabel.TabIndex = 10;
+            AddNewItemStatusLabel.Text = "Status";
+            // 
+            // AddNewItemPlaceLabel
+            // 
+            AddNewItemPlaceLabel.AutoSize = true;
+            AddNewItemPlaceLabel.Location = new Point(306, 218);
+            AddNewItemPlaceLabel.Name = "AddNewItemPlaceLabel";
+            AddNewItemPlaceLabel.Size = new Size(35, 15);
+            AddNewItemPlaceLabel.TabIndex = 9;
+            AddNewItemPlaceLabel.Text = "Place";
+            // 
+            // AddNewItemSerialNumberLabel
+            // 
+            AddNewItemSerialNumberLabel.AutoSize = true;
+            AddNewItemSerialNumberLabel.Enabled = false;
+            AddNewItemSerialNumberLabel.Location = new Point(306, 343);
+            AddNewItemSerialNumberLabel.Name = "AddNewItemSerialNumberLabel";
+            AddNewItemSerialNumberLabel.Size = new Size(82, 15);
+            AddNewItemSerialNumberLabel.TabIndex = 8;
+            AddNewItemSerialNumberLabel.Text = "Serial Number";
+            // 
+            // AddNewItemCategoryLabel
+            // 
+            AddNewItemCategoryLabel.AutoSize = true;
+            AddNewItemCategoryLabel.Location = new Point(306, 176);
+            AddNewItemCategoryLabel.Name = "AddNewItemCategoryLabel";
+            AddNewItemCategoryLabel.Size = new Size(55, 15);
+            AddNewItemCategoryLabel.TabIndex = 7;
+            AddNewItemCategoryLabel.Text = "Category";
+            // 
+            // AddNewItemNameLabel
+            // 
+            AddNewItemNameLabel.AutoSize = true;
+            AddNewItemNameLabel.Location = new Point(306, 144);
+            AddNewItemNameLabel.Name = "AddNewItemNameLabel";
+            AddNewItemNameLabel.Size = new Size(39, 15);
+            AddNewItemNameLabel.TabIndex = 6;
+            AddNewItemNameLabel.Text = "Name";
+            // 
+            // AddNewItemSerialNumberTextbox
+            // 
+            AddNewItemSerialNumberTextbox.Enabled = false;
+            AddNewItemSerialNumberTextbox.Location = new Point(396, 340);
+            AddNewItemSerialNumberTextbox.Name = "AddNewItemSerialNumberTextbox";
+            AddNewItemSerialNumberTextbox.Size = new Size(121, 23);
+            AddNewItemSerialNumberTextbox.TabIndex = 5;
+            // 
+            // AddNewItemNotesTextbox
+            // 
+            AddNewItemNotesTextbox.Location = new Point(396, 300);
+            AddNewItemNotesTextbox.Name = "AddNewItemNotesTextbox";
+            AddNewItemNotesTextbox.Size = new Size(121, 23);
+            AddNewItemNotesTextbox.TabIndex = 4;
+            // 
+            // AddNewItemPlaceTextbox
+            // 
+            AddNewItemPlaceTextbox.Location = new Point(396, 215);
+            AddNewItemPlaceTextbox.Name = "AddNewItemPlaceTextbox";
+            AddNewItemPlaceTextbox.Size = new Size(121, 23);
+            AddNewItemPlaceTextbox.TabIndex = 3;
+            // 
+            // AddNewItemNameTextbox
+            // 
+            AddNewItemNameTextbox.Location = new Point(396, 137);
+            AddNewItemNameTextbox.Name = "AddNewItemNameTextbox";
+            AddNewItemNameTextbox.Size = new Size(121, 23);
+            AddNewItemNameTextbox.TabIndex = 2;
+            // 
+            // AddNewItemStatusCombobox
+            // 
+            AddNewItemStatusCombobox.FormattingEnabled = true;
+            AddNewItemStatusCombobox.Location = new Point(396, 256);
+            AddNewItemStatusCombobox.Name = "AddNewItemStatusCombobox";
+            AddNewItemStatusCombobox.Size = new Size(121, 23);
+            AddNewItemStatusCombobox.TabIndex = 1;
+            // 
+            // AddNewItemCategoryCombobox
+            // 
+            AddNewItemCategoryCombobox.FormattingEnabled = true;
+            AddNewItemCategoryCombobox.Location = new Point(396, 176);
+            AddNewItemCategoryCombobox.Name = "AddNewItemCategoryCombobox";
+            AddNewItemCategoryCombobox.Size = new Size(121, 23);
+            AddNewItemCategoryCombobox.TabIndex = 0;
+            AddNewItemCategoryCombobox.SelectedIndexChanged += ComboBox2_SelectedIndexChanged;
+            // 
+            // menuStrip1
+            // 
+            menuStrip1.Items.AddRange(new ToolStripItem[] { toolStripMenuItem1 });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(1588, 24);
+            menuStrip1.TabIndex = 6;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // toolStripMenuItem1
+            // 
+            toolStripMenuItem1.DropDownItems.AddRange(new ToolStripItem[] { addItemToolStripMenuItem, addCategoryToolStripMenuItem, personToolStripMenuItem });
+            toolStripMenuItem1.Name = "toolStripMenuItem1";
+            toolStripMenuItem1.Size = new Size(66, 20);
+            toolStripMenuItem1.Text = "Add new";
+            // 
+            // addItemToolStripMenuItem
+            // 
+            addItemToolStripMenuItem.Name = "addItemToolStripMenuItem";
+            addItemToolStripMenuItem.Size = new Size(180, 22);
+            addItemToolStripMenuItem.Text = "Item";
+            // 
+            // addCategoryToolStripMenuItem
+            // 
+            addCategoryToolStripMenuItem.Name = "addCategoryToolStripMenuItem";
+            addCategoryToolStripMenuItem.Size = new Size(180, 22);
+            addCategoryToolStripMenuItem.Text = "Category";
+            // 
+            // personToolStripMenuItem
+            // 
+            personToolStripMenuItem.Name = "personToolStripMenuItem";
+            personToolStripMenuItem.Size = new Size(180, 22);
+            personToolStripMenuItem.Text = "Person";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1588, 830);
-            Controls.Add(panel4);
-            Controls.Add(panel1);
-            Controls.Add(label1);
+            Controls.Add(menuStrip1);
+            Controls.Add(AddNewCategoryPanel);
+            Controls.Add(AddNewItemPanel);
+            MainMenuStrip = menuStrip1;
             Name = "Form1";
             Text = "Form1";
             panel1.ResumeLayout(false);
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            panel4.ResumeLayout(false);
-            panel4.PerformLayout();
+            AddNewCategoryPanel.ResumeLayout(false);
+            AddNewCategoryPanel.PerformLayout();
+            AddNewPersonPanel.ResumeLayout(false);
+            AddNewPersonPanel.PerformLayout();
+            AddNewItemPanel.ResumeLayout(false);
+            AddNewItemPanel.PerformLayout();
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -346,31 +397,36 @@
         #endregion
 
         private Button button1;
-        private Label label1;
         private Panel panel1;
         private DataGridView dataGridView1;
-        private Panel panel2;
+        private Panel AddNewPersonPanel;
         private TextBox textBox1;
-        private ComboBox comboBox1;
-        private Label label2;
-        private Button button2;
-        private Panel panel3;
-        private Label label3;
-        private Button button3;
-        private TextBox textBox2;
-        private Panel panel4;
-        private TextBox textBox6;
-        private TextBox textBox5;
-        private TextBox textBox4;
-        private TextBox textBox3;
-        private ComboBox comboBox3;
-        private ComboBox comboBox2;
-        private Label label9;
-        private Label label8;
-        private Label label7;
-        private Label label6;
-        private Label label5;
-        private Label label4;
-        private Button button4;
+        private ComboBox AddNewPersonRankCombobox;
+        private Label AddNewPersonLabel;
+        private Button AddNewPersonButton;
+        private Panel AddNewCategoryPanel;
+        private Label AddNewCategoryLabel;
+        private Button AddNewCategoryButton;
+        private TextBox AddNewCategoryTextBox;
+        private Panel AddNewItemPanel;
+        private TextBox AddNewItemSerialNumberTextbox;
+        private TextBox AddNewItemNotesTextbox;
+        private TextBox AddNewItemPlaceTextbox;
+        private TextBox AddNewItemNameTextbox;
+        private ComboBox AddNewItemStatusCombobox;
+        private ComboBox AddNewItemCategoryCombobox;
+        private Label AddNewItemNotesLabel;
+        private Label AddNewItemStatusLabel;
+        private Label AddNewItemPlaceLabel;
+        private Label AddNewItemSerialNumberLabel;
+        private Label AddNewItemCategoryLabel;
+        private Label AddNewItemNameLabel;
+        private Button AddNewItemButton;
+        private Label AddNewItemLabel;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem toolStripMenuItem1;
+        private ToolStripMenuItem addItemToolStripMenuItem;
+        private ToolStripMenuItem addCategoryToolStripMenuItem;
+        private ToolStripMenuItem personToolStripMenuItem;
     }
 }
