@@ -40,3 +40,6 @@ C:\Users\Ahmad Taher\source\repos\3ohda\3ohda\bin\Debug\net8.0-windows\Microsoft
 C:\Users\Ahmad Taher\source\repos\3ohda\3ohda\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\Ahmad Taher\source\repos\3ohda\3ohda\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
 C:\Users\Ahmad Taher\source\repos\3ohda\3ohda\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\Ahmad Taher\source\repos\3ohda\3ohda\obj\Debug\net8.0-windows\_3ohda.AddNewCategoryUserControl.resources
+C:\Users\Ahmad Taher\source\repos\3ohda\3ohda\obj\Debug\net8.0-windows\_3ohda.AddNewItemUserControl.resources
+C:\Users\Ahmad Taher\source\repos\3ohda\3ohda\obj\Debug\net8.0-windows\_3ohda.AddNewPersonUserControl.resources
