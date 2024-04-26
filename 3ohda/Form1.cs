@@ -43,7 +43,7 @@ namespace _3ohda
         private void SwitchingPanels()
         {
             if (lastUsed != null)
-            { 
+            {
                 lastUsed.Visible = false;
                 lastUsed.Enabled = false;
             }

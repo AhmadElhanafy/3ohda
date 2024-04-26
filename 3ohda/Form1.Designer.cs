@@ -49,21 +49,21 @@
             // addItemToolStripMenuItem
             // 
             addItemToolStripMenuItem.Name = "addItemToolStripMenuItem";
-            addItemToolStripMenuItem.Size = new Size(180, 22);
+            addItemToolStripMenuItem.Size = new Size(122, 22);
             addItemToolStripMenuItem.Text = "Item";
             addItemToolStripMenuItem.Click += addItemToolStripMenuItem_Click;
             // 
             // addCategoryToolStripMenuItem
             // 
             addCategoryToolStripMenuItem.Name = "addCategoryToolStripMenuItem";
-            addCategoryToolStripMenuItem.Size = new Size(180, 22);
+            addCategoryToolStripMenuItem.Size = new Size(122, 22);
             addCategoryToolStripMenuItem.Text = "Category";
             addCategoryToolStripMenuItem.Click += addCategoryToolStripMenuItem_Click;
             // 
             // personToolStripMenuItem
             // 
             personToolStripMenuItem.Name = "personToolStripMenuItem";
-            personToolStripMenuItem.Size = new Size(180, 22);
+            personToolStripMenuItem.Size = new Size(122, 22);
             personToolStripMenuItem.Text = "Person";
             personToolStripMenuItem.Click += personToolStripMenuItem_Click;
             // 
