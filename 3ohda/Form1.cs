@@ -4,19 +4,21 @@ using Mysqlx.Crud;
 using System.Data;
 using System.Text;
 using static Org.BouncyCastle.Asn1.Cmp.Challenge;
+using MySql.EntityFrameworkCore.Extensions;
 
+using Microsoft.EntityFrameworkCore;
 namespace _3ohda
 {
     public partial class Form1 : Form
     {
-        private UserControl lastUsed;
+        private UserControl? lastUsed;
 
         public Form1()
         {
             InitializeComponent();
         }
 
-        private void addItemToolStripMenuItem_Click(object sender, EventArgs e)
+        private void AddItemToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SwitchingPanels();
             addNewItemUserControl1.Enabled = true;
@@ -24,7 +26,7 @@ namespace _3ohda
             lastUsed = addNewItemUserControl1;
         }
 
-        private void addCategoryToolStripMenuItem_Click(object sender, EventArgs e)
+        private void AddCategoryToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SwitchingPanels();
             addNewCategoryUserControl1.Enabled = true;
@@ -32,7 +34,7 @@ namespace _3ohda
             lastUsed = addNewCategoryUserControl1;
         }
 
-        private void personToolStripMenuItem_Click(object sender, EventArgs e)
+        private void PersonToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SwitchingPanels();
             addNewPersonUserControl1.Enabled = true;
@@ -46,7 +48,7 @@ namespace _3ohda
             {
                 lastUsed.Visible = false;
                 lastUsed.Enabled = false;
-            }
+            }  
         }
     }
 }

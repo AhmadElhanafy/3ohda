@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             toolStripMenuItem1 = new ToolStripMenuItem();
-            addItemToolStripMenuItem = new ToolStripMenuItem();
-            addCategoryToolStripMenuItem = new ToolStripMenuItem();
-            personToolStripMenuItem = new ToolStripMenuItem();
+            AddItemToolStripMenuItem = new ToolStripMenuItem();
+            AddCategoryToolStripMenuItem = new ToolStripMenuItem();
+            AddPersonToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1 = new MenuStrip();
             addNewItemUserControl1 = new AddNewItemUserControl();
             addNewPersonUserControl1 = new AddNewPersonUserControl();
@@ -41,31 +41,31 @@
             // 
             // toolStripMenuItem1
             // 
-            toolStripMenuItem1.DropDownItems.AddRange(new ToolStripItem[] { addItemToolStripMenuItem, addCategoryToolStripMenuItem, personToolStripMenuItem });
+            toolStripMenuItem1.DropDownItems.AddRange(new ToolStripItem[] { AddItemToolStripMenuItem, AddCategoryToolStripMenuItem, AddPersonToolStripMenuItem });
             toolStripMenuItem1.Name = "toolStripMenuItem1";
             toolStripMenuItem1.Size = new Size(66, 20);
             toolStripMenuItem1.Text = "Add new";
             // 
-            // addItemToolStripMenuItem
+            // AddItemToolStripMenuItem
             // 
-            addItemToolStripMenuItem.Name = "addItemToolStripMenuItem";
-            addItemToolStripMenuItem.Size = new Size(122, 22);
-            addItemToolStripMenuItem.Text = "Item";
-            addItemToolStripMenuItem.Click += addItemToolStripMenuItem_Click;
+            AddItemToolStripMenuItem.Name = "AddItemToolStripMenuItem";
+            AddItemToolStripMenuItem.Size = new Size(180, 22);
+            AddItemToolStripMenuItem.Text = "Item";
+            AddItemToolStripMenuItem.Click += AddItemToolStripMenuItem_Click;
             // 
-            // addCategoryToolStripMenuItem
+            // AddCategoryToolStripMenuItem
             // 
-            addCategoryToolStripMenuItem.Name = "addCategoryToolStripMenuItem";
-            addCategoryToolStripMenuItem.Size = new Size(122, 22);
-            addCategoryToolStripMenuItem.Text = "Category";
-            addCategoryToolStripMenuItem.Click += addCategoryToolStripMenuItem_Click;
+            AddCategoryToolStripMenuItem.Name = "AddCategoryToolStripMenuItem";
+            AddCategoryToolStripMenuItem.Size = new Size(180, 22);
+            AddCategoryToolStripMenuItem.Text = "Category";
+            AddCategoryToolStripMenuItem.Click += AddCategoryToolStripMenuItem_Click;
             // 
-            // personToolStripMenuItem
+            // AddPersonToolStripMenuItem
             // 
-            personToolStripMenuItem.Name = "personToolStripMenuItem";
-            personToolStripMenuItem.Size = new Size(122, 22);
-            personToolStripMenuItem.Text = "Person";
-            personToolStripMenuItem.Click += personToolStripMenuItem_Click;
+            AddPersonToolStripMenuItem.Name = "AddPersonToolStripMenuItem";
+            AddPersonToolStripMenuItem.Size = new Size(180, 22);
+            AddPersonToolStripMenuItem.Text = "Person";
+            AddPersonToolStripMenuItem.Click += PersonToolStripMenuItem_Click;
             // 
             // menuStrip1
             // 
@@ -124,9 +124,9 @@
         #endregion
 
         private ToolStripMenuItem toolStripMenuItem1;
-        private ToolStripMenuItem addItemToolStripMenuItem;
-        private ToolStripMenuItem addCategoryToolStripMenuItem;
-        private ToolStripMenuItem personToolStripMenuItem;
+        private ToolStripMenuItem AddItemToolStripMenuItem;
+        private ToolStripMenuItem AddCategoryToolStripMenuItem;
+        private ToolStripMenuItem AddPersonToolStripMenuItem;
         private MenuStrip menuStrip1;
         private AddNewItemUserControl addNewItemUserControl1;
         private AddNewPersonUserControl addNewPersonUserControl1;
