@@ -1,13 +1,5 @@
-﻿using MySql.Data.MySqlClient;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿
+using _3ohda.testdb;
 
 namespace _3ohda
 {
@@ -22,19 +14,18 @@ namespace _3ohda
 
         private void AddNewItemButton_Click(object sender, EventArgs e)
         {
-            string constring = "Server=localhost; database=testdb; uid=root; pwd=root";
-            MySqlConnection conn = new(constring);
-            conn.Open();
-            MySqlCommand comm = conn.CreateCommand();
-            comm.CommandText = "INSERT INTO item (Name, CategoryID, SerialNumber, Place, StatusID, Notes) VALUES(@name, @categoryID, @serialNumber, @place, @statusID, @notes)";
-            comm.Parameters.AddWithValue("@name", AddNewItemNameTextbox.Text.ToString());
-            comm.Parameters.AddWithValue("@categoryID", (AddNewItemCategoryCombobox.SelectedItem as dynamic).Value);
-            comm.Parameters.AddWithValue("@serialNumber", AddNewItemSerialNumberTextbox.Text);
-            comm.Parameters.AddWithValue("@place", AddNewItemPlaceTextbox.Text.ToString());
-            comm.Parameters.AddWithValue("@statusID", (AddNewItemStatusCombobox.SelectedItem as dynamic).Value);
-            comm.Parameters.AddWithValue("@notes", AddNewItemNotesTextbox.Text.ToString());
-            comm.ExecuteNonQuery();
-            conn.Close();
+            TestdbContext connection = new();
+            Item newitem = new() 
+            { 
+                Name = AddNewItemNameTextbox.Text, 
+                CategoryId = ((dynamic)AddNewItemCategoryCombobox.SelectedItem).Value, 
+                SerialNumber = AddNewItemSerialNumberTextbox.Text, 
+                Place = AddNewItemPlaceTextbox.Text, 
+                StatusId = ((dynamic)AddNewItemStatusCombobox.SelectedItem).Value, 
+                Notes = AddNewItemNotesTextbox.Text
+            };
+            connection.Items.Add(newitem);
+            connection.SaveChanges();
         }
 
         void LoadCategoryCombobox()
@@ -42,21 +33,11 @@ namespace _3ohda
             AddNewItemCategoryCombobox.DisplayMember = "Text";
             AddNewItemCategoryCombobox.ValueMember = "Value";
 
-            string constring = "Server=localhost; database=testdb; uid=root; pwd=root";
-            DataTable linkcat = new DataTable("category");
-            using (MySqlConnection sqlConn = new(constring))
+            TestdbContext connection = new();
+            var cats = connection.Categories.ToList();
+            foreach (var cat in cats)
             {
-                using (MySqlDataAdapter da = new MySqlDataAdapter("SELECT * FROM category", sqlConn))
-                {
-                    da.Fill(linkcat);
-                }
-            }
-
-            var items = Array.Empty<object>();
-            foreach (DataRow da in linkcat.Rows)
-            {
-
-                AddNewItemCategoryCombobox.Items.Add(new { Value = da[0].ToString(), Text = da[1].ToString() });
+               AddNewItemCategoryCombobox.Items.Add(new { Value = cat.Id, Text = cat.Name });
             }
         }
 
@@ -65,19 +46,12 @@ namespace _3ohda
             AddNewItemStatusCombobox.DisplayMember = "Text";
             AddNewItemStatusCombobox.ValueMember = "Value";
 
-            string constring = "Server=localhost; database=testdb; uid=root; pwd=root";
-            DataTable linkcat = new DataTable("item_status");
-            using (MySqlConnection sqlConn = new(constring))
+            TestdbContext connection = new();
+            var stats = connection.ItemStatuses.ToList();
+            foreach (var stat in stats)
             {
-                using (MySqlDataAdapter da = new MySqlDataAdapter("SELECT * FROM item_status", sqlConn))
-                {
-                    da.Fill(linkcat);
-                }
-            }
-            foreach (DataRow da in linkcat.Rows)
-            {
-                AddNewItemStatusCombobox.Items.Add(new { Value = da[0].ToString(), Text = da[1].ToString() });
-            }
+                AddNewItemStatusCombobox.Items.Add(new { Value = stat.Id, Text = stat.Name });
+            } 
         }
 
         private void AddNewItemCategoryCombobox_SelectedIndexChanged(object sender, EventArgs e)

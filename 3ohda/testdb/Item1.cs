@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
+﻿
 namespace _3ohda.testdb;
 
 public partial class Item1

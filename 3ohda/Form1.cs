@@ -1,12 +1,4 @@
-using Google.Protobuf.WellKnownTypes;
-using MySql.Data.MySqlClient;
-using Mysqlx.Crud;
-using System.Data;
-using System.Text;
-using static Org.BouncyCastle.Asn1.Cmp.Challenge;
-using MySql.EntityFrameworkCore.Extensions;
 
-using Microsoft.EntityFrameworkCore;
 namespace _3ohda
 {
     public partial class Form1 : Form

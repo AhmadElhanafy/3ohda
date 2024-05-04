@@ -1,6 +1,4 @@
 ﻿
-using MySql.Data.MySqlClient;
-
 namespace _3ohda
 {
     partial class AddNewPersonUserControl
@@ -35,7 +33,7 @@ namespace _3ohda
             AddNewPersonButton = new Button();
             AddNewPersonLabel = new Label();
             AddNewPersonRankCombobox = new ComboBox();
-            textBox1 = new TextBox();
+            AddNewPersonTextbox = new TextBox();
             AddNewPersonPanel.SuspendLayout();
             SuspendLayout();
             // 
@@ -44,7 +42,7 @@ namespace _3ohda
             AddNewPersonPanel.Controls.Add(AddNewPersonButton);
             AddNewPersonPanel.Controls.Add(AddNewPersonLabel);
             AddNewPersonPanel.Controls.Add(AddNewPersonRankCombobox);
-            AddNewPersonPanel.Controls.Add(textBox1);
+            AddNewPersonPanel.Controls.Add(AddNewPersonTextbox);
             AddNewPersonPanel.Dock = DockStyle.Fill;
             AddNewPersonPanel.Location = new Point(0, 0);
             AddNewPersonPanel.Name = "AddNewPersonPanel";
@@ -60,7 +58,7 @@ namespace _3ohda
             AddNewPersonButton.TabIndex = 10;
             AddNewPersonButton.Text = "Add";
             AddNewPersonButton.UseVisualStyleBackColor = true;
-            AddNewPersonButton.Click += this.AddNewPersonButton_Click;
+            AddNewPersonButton.Click += AddNewPersonButton_Click;
             // 
             // AddNewPersonLabel
             // 
@@ -81,12 +79,12 @@ namespace _3ohda
             AddNewPersonRankCombobox.Size = new Size(176, 23);
             AddNewPersonRankCombobox.TabIndex = 8;
             // 
-            // textBox1
+            // AddNewPersonTextbox
             // 
-            textBox1.Location = new Point(305, 323);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(176, 23);
-            textBox1.TabIndex = 0;
+            AddNewPersonTextbox.Location = new Point(305, 323);
+            AddNewPersonTextbox.Name = "AddNewPersonTextbox";
+            AddNewPersonTextbox.Size = new Size(176, 23);
+            AddNewPersonTextbox.TabIndex = 0;
             // 
             // AddNewPersonUserControl
             // 
@@ -106,6 +104,6 @@ namespace _3ohda
         private Button AddNewPersonButton;
         private Label AddNewPersonLabel;
         private ComboBox AddNewPersonRankCombobox;
-        private TextBox textBox1;
+        private TextBox AddNewPersonTextbox;
     }
 }
