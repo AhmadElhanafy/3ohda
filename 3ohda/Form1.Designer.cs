@@ -33,9 +33,6 @@
             AddCategoryToolStripMenuItem = new ToolStripMenuItem();
             AddPersonToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1 = new MenuStrip();
-            addNewItemUserControl1 = new AddNewItemUserControl();
-            addNewPersonUserControl1 = new AddNewPersonUserControl();
-            addNewCategoryUserControl1 = new AddNewCategoryUserControl();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -49,21 +46,21 @@
             // AddItemToolStripMenuItem
             // 
             AddItemToolStripMenuItem.Name = "AddItemToolStripMenuItem";
-            AddItemToolStripMenuItem.Size = new Size(180, 22);
+            AddItemToolStripMenuItem.Size = new Size(122, 22);
             AddItemToolStripMenuItem.Text = "Item";
             AddItemToolStripMenuItem.Click += AddItemToolStripMenuItem_Click;
             // 
             // AddCategoryToolStripMenuItem
             // 
             AddCategoryToolStripMenuItem.Name = "AddCategoryToolStripMenuItem";
-            AddCategoryToolStripMenuItem.Size = new Size(180, 22);
+            AddCategoryToolStripMenuItem.Size = new Size(122, 22);
             AddCategoryToolStripMenuItem.Text = "Category";
             AddCategoryToolStripMenuItem.Click += AddCategoryToolStripMenuItem_Click;
             // 
             // AddPersonToolStripMenuItem
             // 
             AddPersonToolStripMenuItem.Name = "AddPersonToolStripMenuItem";
-            AddPersonToolStripMenuItem.Size = new Size(180, 22);
+            AddPersonToolStripMenuItem.Size = new Size(122, 22);
             AddPersonToolStripMenuItem.Text = "Person";
             AddPersonToolStripMenuItem.Click += PersonToolStripMenuItem_Click;
             // 
@@ -76,41 +73,11 @@
             menuStrip1.TabIndex = 6;
             menuStrip1.Text = "menuStrip1";
             // 
-            // addNewItemUserControl1
-            // 
-            addNewItemUserControl1.Enabled = false;
-            addNewItemUserControl1.Location = new Point(0, 27);
-            addNewItemUserControl1.Name = "addNewItemUserControl1";
-            addNewItemUserControl1.Size = new Size(800, 600);
-            addNewItemUserControl1.TabIndex = 7;
-            addNewItemUserControl1.Visible = false;
-            // 
-            // addNewPersonUserControl1
-            // 
-            addNewPersonUserControl1.Enabled = false;
-            addNewPersonUserControl1.Location = new Point(0, 27);
-            addNewPersonUserControl1.Name = "addNewPersonUserControl1";
-            addNewPersonUserControl1.Size = new Size(800, 600);
-            addNewPersonUserControl1.TabIndex = 8;
-            addNewPersonUserControl1.Visible = false;
-            // 
-            // addNewCategoryUserControl1
-            // 
-            addNewCategoryUserControl1.Enabled = false;
-            addNewCategoryUserControl1.Location = new Point(0, 27);
-            addNewCategoryUserControl1.Name = "addNewCategoryUserControl1";
-            addNewCategoryUserControl1.Size = new Size(800, 600);
-            addNewCategoryUserControl1.TabIndex = 9;
-            addNewCategoryUserControl1.Visible = false;
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(804, 631);
-            Controls.Add(addNewCategoryUserControl1);
-            Controls.Add(addNewPersonUserControl1);
-            Controls.Add(addNewItemUserControl1);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Name = "Form1";
@@ -128,8 +95,5 @@
         private ToolStripMenuItem AddCategoryToolStripMenuItem;
         private ToolStripMenuItem AddPersonToolStripMenuItem;
         private MenuStrip menuStrip1;
-        private AddNewItemUserControl addNewItemUserControl1;
-        private AddNewPersonUserControl addNewPersonUserControl1;
-        private AddNewCategoryUserControl addNewCategoryUserControl1;
     }
 }

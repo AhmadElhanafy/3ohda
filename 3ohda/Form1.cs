@@ -13,34 +13,45 @@ namespace _3ohda
         private void AddItemToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SwitchingPanels();
-            addNewItemUserControl1.Enabled = true;
-            addNewItemUserControl1.Visible = true;
-            lastUsed = addNewItemUserControl1;
+            AddNewItemUserControl addNewItemUserControl = new()
+            {
+                Location = new Point(0, 27),
+                Name = "addNewItemUserControl1",
+                Size = new Size(800, 600)
+            };
+            Controls.Add(addNewItemUserControl);
+            lastUsed = addNewItemUserControl;
         }
 
         private void AddCategoryToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SwitchingPanels();
-            addNewCategoryUserControl1.Enabled = true;
-            addNewCategoryUserControl1.Visible = true;
-            lastUsed = addNewCategoryUserControl1;
+            AddNewCategoryUserControl addNewCategoryUserControl = new()
+            {
+                Location = new Point(0, 27),
+                Name = "addNewCategoryUserControl1",
+                Size = new Size(800, 600)
+            };
+            Controls.Add(addNewCategoryUserControl);
+            lastUsed = addNewCategoryUserControl;
         }
 
         private void PersonToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SwitchingPanels();
-            addNewPersonUserControl1.Enabled = true;
-            addNewPersonUserControl1.Visible = true;
-            lastUsed = addNewPersonUserControl1;
+            AddNewPersonUserControl addNewPersonUserControl = new()
+            {
+                Location = new Point(0, 27),
+                Name = "addNewPersonUserControl1",
+                Size = new Size(800, 600)
+            };
+            Controls.Add(addNewPersonUserControl);
+            lastUsed = addNewPersonUserControl;
         }
 
         private void SwitchingPanels()
         {
-            if (lastUsed != null)
-            {
-                lastUsed.Visible = false;
-                lastUsed.Enabled = false;
-            }  
+            lastUsed?.Dispose();
         }
     }
 }
