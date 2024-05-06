@@ -22,6 +22,11 @@ namespace _3ohda
             connection.Categories.Add(newcategory);
             connection.SaveChanges();
 
+            ResetInputs();
+        }
+
+        private void ResetInputs()
+        {
             AddNewCategoryTextBox.Text = null;
         }
     }

@@ -21,6 +21,11 @@ namespace _3ohda
             connection.Personels.Add(newperson);
             connection.SaveChanges();
 
+            ResetInputs();
+        }
+
+        private void ResetInputs()
+        {
             AddNewPersonRankCombobox.SelectedItem = null;
             AddNewPersonTextbox.Text = null;
         }

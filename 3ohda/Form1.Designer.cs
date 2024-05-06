@@ -33,6 +33,7 @@
             AddCategoryToolStripMenuItem = new ToolStripMenuItem();
             AddPersonToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1 = new MenuStrip();
+            createNewCustodyUserControl1 = new CreateNewCustodyUserControl();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -73,11 +74,19 @@
             menuStrip1.TabIndex = 6;
             menuStrip1.Text = "menuStrip1";
             // 
+            // createNewCustodyUserControl1
+            // 
+            createNewCustodyUserControl1.Location = new Point(0, 27);
+            createNewCustodyUserControl1.Name = "createNewCustodyUserControl1";
+            createNewCustodyUserControl1.Size = new Size(800, 600);
+            createNewCustodyUserControl1.TabIndex = 7;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(804, 631);
+            Controls.Add(createNewCustodyUserControl1);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Name = "Form1";
@@ -95,5 +104,6 @@
         private ToolStripMenuItem AddCategoryToolStripMenuItem;
         private ToolStripMenuItem AddPersonToolStripMenuItem;
         private MenuStrip menuStrip1;
+        private CreateNewCustodyUserControl createNewCustodyUserControl1;
     }
 }

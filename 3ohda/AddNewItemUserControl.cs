@@ -26,6 +26,8 @@ namespace _3ohda
             };
             connection.Items.Add(newitem);
             connection.SaveChanges();
+
+            ResetInputs();
         }
 
         void LoadCategoryCombobox()
@@ -67,5 +69,15 @@ namespace _3ohda
                 AddNewItemSerialNumberTextbox.Enabled = false;
             }
         }
+
+        private void ResetInputs()
+        { 
+            AddNewItemNameTextbox.Text = string.Empty;
+            AddNewItemCategoryCombobox.SelectedItem = null;
+            AddNewItemSerialNumberTextbox.Text= string.Empty;
+            AddNewItemPlaceTextbox.Text= string.Empty;
+            AddNewItemStatusCombobox.SelectedItem= null;
+            AddNewItemNotesTextbox.Text= string.Empty;
+        } 
     }
 }

@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Ahmad Taher\\source\\repos\\3ohda\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{132AC3A5-0691-47D0-9500-9F925BB683F8}|3ohda\\3ohda.csproj|c:\\users\\ahmad taher\\source\\repos\\3ohda\\3ohda\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{132AC3A5-0691-47D0-9500-9F925BB683F8}|3ohda\\3ohda.csproj|solutionrelative:3ohda\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{132AC3A5-0691-47D0-9500-9F925BB683F8}|3ohda\\3ohda.csproj|c:\\users\\ahmad taher\\source\\repos\\3ohda\\3ohda\\createnewcustodyusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{132AC3A5-0691-47D0-9500-9F925BB683F8}|3ohda\\3ohda.csproj|solutionrelative:3ohda\\createnewcustodyusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{132AC3A5-0691-47D0-9500-9F925BB683F8}|3ohda\\3ohda.csproj|c:\\users\\ahmad taher\\source\\repos\\3ohda\\3ohda\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{132AC3A5-0691-47D0-9500-9F925BB683F8}|3ohda\\3ohda.csproj|solutionrelative:3ohda\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{132AC3A5-0691-47D0-9500-9F925BB683F8}|3ohda\\3ohda.csproj|C:\\Users\\Ahmad Taher\\source\\repos\\3ohda\\3ohda\\createnewcustodyusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{132AC3A5-0691-47D0-9500-9F925BB683F8}|3ohda\\3ohda.csproj|solutionrelative:3ohda\\createnewcustodyusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{132AC3A5-0691-47D0-9500-9F925BB683F8}|3ohda\\3ohda.csproj|c:\\users\\ahmad taher\\source\\repos\\3ohda\\3ohda\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{132AC3A5-0691-47D0-9500-9F925BB683F8}|3ohda\\3ohda.csproj|solutionrelative:3ohda\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{132AC3A5-0691-47D0-9500-9F925BB683F8}|3ohda\\3ohda.csproj|C:\\Users\\Ahmad Taher\\source\\repos\\3ohda\\3ohda\\addnewitemusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{132AC3A5-0691-47D0-9500-9F925BB683F8}|3ohda\\3ohda.csproj|solutionrelative:3ohda\\addnewitemusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,41 +30,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Ahmad Taher\\source\\repos\\3ohda\\3ohda\\Form1.cs",
-              "RelativeDocumentMoniker": "3ohda\\Form1.cs",
-              "ToolTip": "C:\\Users\\Ahmad Taher\\source\\repos\\3ohda\\3ohda\\Form1.cs [Design]",
-              "RelativeToolTip": "3ohda\\Form1.cs [Design]",
+              "DocumentIndex": 2,
+              "Title": "AddNewItemUserControl.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmad Taher\\source\\repos\\3ohda\\3ohda\\AddNewItemUserControl.cs",
+              "RelativeDocumentMoniker": "3ohda\\AddNewItemUserControl.cs",
+              "ToolTip": "C:\\Users\\Ahmad Taher\\source\\repos\\3ohda\\3ohda\\AddNewItemUserControl.cs",
+              "RelativeToolTip": "3ohda\\AddNewItemUserControl.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAABVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T07:08:11.664Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-06T06:53:27.248Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CreateNewCustodyUserControl.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmad Taher\\source\\repos\\3ohda\\3ohda\\CreateNewCustodyUserControl.cs",
+              "RelativeDocumentMoniker": "3ohda\\CreateNewCustodyUserControl.cs",
+              "ToolTip": "C:\\Users\\Ahmad Taher\\source\\repos\\3ohda\\3ohda\\CreateNewCustodyUserControl.cs",
+              "RelativeToolTip": "3ohda\\CreateNewCustodyUserControl.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAowCEAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T08:13:53.583Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad Taher\\source\\repos\\3ohda\\3ohda\\Form1.cs",
-              "RelativeDocumentMoniker": "3ohda\\Form1.cs",
-              "ToolTip": "C:\\Users\\Ahmad Taher\\source\\repos\\3ohda\\3ohda\\Form1.cs",
-              "RelativeToolTip": "3ohda\\Form1.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAUwDYAAAAJAAAA",
+              "Title": "CreateNewCustodyUserControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Ahmad Taher\\source\\repos\\3ohda\\3ohda\\CreateNewCustodyUserControl.cs",
+              "RelativeDocumentMoniker": "3ohda\\CreateNewCustodyUserControl.cs",
+              "ToolTip": "C:\\Users\\Ahmad Taher\\source\\repos\\3ohda\\3ohda\\CreateNewCustodyUserControl.cs [Design]",
+              "RelativeToolTip": "3ohda\\CreateNewCustodyUserControl.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T07:04:46.842Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad Taher\\source\\repos\\3ohda\\3ohda\\Form1.Designer.cs",
-              "RelativeDocumentMoniker": "3ohda\\Form1.Designer.cs",
-              "ToolTip": "C:\\Users\\Ahmad Taher\\source\\repos\\3ohda\\3ohda\\Form1.Designer.cs",
-              "RelativeToolTip": "3ohda\\Form1.Designer.cs",
-              "ViewState": "AQIAAEgAAAAAAAAAAAAqwFMAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T07:02:38.538Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-05T08:11:03.001Z"
             }
           ]
         }

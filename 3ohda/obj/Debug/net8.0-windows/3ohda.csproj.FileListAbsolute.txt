@@ -113,3 +113,4 @@ C:\Users\Ahmad Taher\source\repos\3ohda\3ohda\bin\Debug\net8.0-windows\ru\Micros
 C:\Users\Ahmad Taher\source\repos\3ohda\3ohda\bin\Debug\net8.0-windows\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Ahmad Taher\source\repos\3ohda\3ohda\bin\Debug\net8.0-windows\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Ahmad Taher\source\repos\3ohda\3ohda\bin\Debug\net8.0-windows\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ahmad Taher\source\repos\3ohda\3ohda\obj\Debug\net8.0-windows\_3ohda.CreateNewCustodyUserControl.resources
