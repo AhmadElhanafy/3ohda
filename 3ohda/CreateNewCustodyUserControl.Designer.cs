@@ -230,6 +230,7 @@
             AddItemToListButton.TabIndex = 19;
             AddItemToListButton.Text = "Add Item To List";
             AddItemToListButton.UseVisualStyleBackColor = true;
+            AddItemToListButton.Click += AddItemToListButton_Click;
             // 
             // CreateNewCustodyUserControl
             // 

@@ -1,4 +1,5 @@
 ﻿using _3ohda.testdb;
+using System.ComponentModel;
 using System.Data;
 using static Org.BouncyCastle.Asn1.Cmp.Challenge;
 
@@ -6,10 +7,16 @@ namespace _3ohda
 {
     public partial class CreateNewCustodyUserControl : UserControl
     {
+        private TestdbContext connection = new();
+        private List<Item> list = [];
+        private BindingList<Item> bs = new();
+        
+
         public CreateNewCustodyUserControl()
         {
             InitializeComponent();
             LoadCategoryCombobox();
+            
         }
 
         private void RankCombobox_SelectedIndexChanged(object sender, EventArgs e)
@@ -33,7 +40,7 @@ namespace _3ohda
         {
             if (ItemCombobox.SelectedItem == null) return;
             int itemid = ((dynamic)ItemCombobox.SelectedItem).Value;
-            TestdbContext connection = new();
+
             Item item = connection.Items.First(x => x.Id == itemid);
             SerialNumber.Text = item.SerialNumber;
             Place.Text = item.Place;
@@ -41,12 +48,19 @@ namespace _3ohda
             Status.Text = connection.ItemStatuses.First(x => x.Id == item.StatusId.Value).Name;
         }
 
+        private void AddItemToListButton_Click(object sender, EventArgs e)
+        { 
+            int itemid = ((dynamic)ItemCombobox.SelectedItem).Value;
+            bs.Add(connection.Items.First(x => x.Id == itemid));
+            
+            ItemsListDataGridView.DataSource = bs;
+        }
+
         private void LoadCategoryCombobox()
         {
             CategoryCombobox.DisplayMember = "Text";
             CategoryCombobox.ValueMember = "Value";
 
-            TestdbContext connection = new();
             var categories = connection.Categories.ToList();
             foreach (var category in categories)
             {
@@ -59,7 +73,6 @@ namespace _3ohda
             NameCombobox.DisplayMember = "Text";
             NameCombobox.ValueMember = "Value";
 
-            TestdbContext connection = new();
             var personels = connection.Personels.Where(x => x.Rank == rank).ToList();
             foreach (var personel in personels)
             {
@@ -72,12 +85,11 @@ namespace _3ohda
             ItemCombobox.DisplayMember = "Text";
             ItemCombobox.ValueMember = "Value";
 
-            TestdbContext connection = new();
             var items = connection.Items.Where(x => x.CategoryId == categoryid).ToList();
             foreach (var item in items)
             {
                 ItemCombobox.Items.Add(new { Value = item.Id, Text = item.Name });
             }
-        } 
+        }
     }
 }
